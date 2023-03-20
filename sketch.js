@@ -3,6 +3,7 @@ let squareSize2 = 100;
 let c1 = 255;
 let c2 = 0;
 
+
 function setup() {
   createCanvas(600, 600);
   background(0);
@@ -24,14 +25,10 @@ function blackSquare() {
 
 function draw() {
   frameRate(10)
-  console.log(c1, c2)
 
   whiteSquare()
   squareSize1 += 15
 
-
-
- 
   if(squareSize1 > width) {
     blackSquare()
     squareSize2 += 15
@@ -40,8 +37,8 @@ function draw() {
     if(squareSize1 && squareSize2 > width) {
       squareSize1 = 100
       squareSize2 = 100
-      c1 -= 20
-      c2 += 20
+      // alpha1 -= 50
+      // alpha2 += 50
     }
 
     
