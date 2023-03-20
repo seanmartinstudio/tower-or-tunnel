@@ -1,22 +1,24 @@
-let squareSize1 = 100
-let squareSize2 = 100
+let squareSize1 = 100;
+let squareSize2 = 100;
+let alphaWhite = 0;
+let alphaBlack = 0;
 
 function setup() {
   createCanvas(600, 600);
   background(0);
 }
 
-function whiteSquare() {
+function whiteSquare(alphaWhite) {
   noFill()
   strokeWeight(4)
-  stroke(255, 255)
+  stroke(color(255, alphaWhite))
   square(0, 0, squareSize1)
 }
 
-function blackSquare() {
+function blackSquare(alphaBlack) {
   noFill()
   strokeWeight(4)
-  stroke(0)
+  stroke(color(0, alphaBlack))
   square(0, 0, squareSize2)
 }
 
