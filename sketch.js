@@ -30,12 +30,12 @@ function blackSquare() {
   stroke(color(0))
   square(0, 0, squareSize2)
 
-  //fill in x axis with green as squares progress
+  //fill in X axis with green as squares progress
   strokeWeight(4)
   stroke(0, 255, 0)
   line(0, 0, 0, lineY)
 
-  //fill in y axis with green as squares progress
+  //fill in Y axis with green as squares progress
   strokeWeight(4)
   stroke(0, 255, 0)
   line(lineX, 0, 0, 0)
@@ -68,6 +68,6 @@ function draw() {
 function keyPressed() {
   // download 30-second GIF of animation
   if (key === 's') {
-    saveGif('mySketch', 30);
+    saveGif('mySketch_2', 30);
   }
 }
